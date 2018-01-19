@@ -37,8 +37,13 @@
     <Filter Include="VisualGDB settings">
       <UniqueIdentifier>{d71f04f8-b49e-40ce-a649-b31ece26af02}</UniqueIdentifier>
     </Filter>
+    <Filter Include="led">
+      <UniqueIdentifier>{d5d58492-7363-4203-9f89-5d4344202c8f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Makefile" />
+  </ItemGroup>
   <ItemGroup>
     <ClCompile Include="FlyStyle.c">
       <Filter>Source files</Filter>
@@ -748,5 +753,13 @@
     <None Include="stm32.xml">
       <Filter>VisualGDB settings</Filter>
     </None>
+    <ClCompile Include="led.c">
+      <Filter>led</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="led.h">
+      <Filter>led</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
