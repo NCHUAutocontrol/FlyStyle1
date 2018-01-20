@@ -40,6 +40,9 @@
     <Filter Include="SdFile">
       <UniqueIdentifier>{f4d0fd78-3c57-450f-a9a8-84b2cd1ddacb}</UniqueIdentifier>
     </Filter>
+    <Filter Include="led">
+      <UniqueIdentifier>{07299e4b-212c-4404-8e3d-b081be81818c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="Makefile" />
