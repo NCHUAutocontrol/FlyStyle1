@@ -422,6 +422,9 @@
 #ifndef __DQ_IBIT__
 #define __DQ_IBIT__ 0
 #endif
+#ifndef STM32F407xx
+#define STM32F407xx 1
+#endif
 #ifndef __FLT32_HAS_INFINITY__
 #define __FLT32_HAS_INFINITY__ 1
 #endif
@@ -525,6 +528,9 @@
 #endif
 #ifndef __UACCUM_MIN__
 #define __UACCUM_MIN__ 0.0UK
+#endif
+#ifndef flash_layout
+#define flash_layout 1
 #endif
 #ifndef __UACCUM_IBIT__
 #define __UACCUM_IBIT__ 16
@@ -703,6 +709,9 @@
 #ifndef __FLT32_MANT_DIG__
 #define __FLT32_MANT_DIG__ 24
 #endif
+#ifndef USE_FREERTOS
+#define USE_FREERTOS 1
+#endif
 #ifndef __FLOAT_WORD_ORDER__
 #define __FLOAT_WORD_ORDER__ __ORDER_LITTLE_ENDIAN__
 #endif
@@ -753,6 +762,9 @@
 #endif
 #ifndef __UDQ_FBIT__
 #define __UDQ_FBIT__ 64
+#endif
+#ifndef DEBUG
+#define DEBUG 1
 #endif
 #ifndef __INT8_TYPE__
 #define __INT8_TYPE__ signed char
@@ -1360,29 +1372,10 @@
 #ifndef __ATOMIC_RELEASE
 #define __ATOMIC_RELEASE 3
 #endif
-#ifndef DEBUG
-#define DEBUG 1
-#endif
-#ifndef flash_layout
-#define flash_layout 
-#endif
-#ifndef STM32F407xx
-#define STM32F407xx 
-#endif
-#ifndef USE_FREERTOS
-#define USE_FREERTOS 
-#endif
 #endif
 
 // --- Include directories begin --- //
 //.
-//$(TOOLCHAIN_ROOT)\arm-eabi\include\c++\7.2.0
-//$(TOOLCHAIN_ROOT)\arm-eabi\include\c++\7.2.0\arm-eabi\thumb\cortex_m4
-//$(TOOLCHAIN_ROOT)\arm-eabi\include\c++\7.2.0\backward
-//$(TOOLCHAIN_ROOT)\lib\gcc\arm-eabi\7.2.0\include
-//$(TOOLCHAIN_ROOT)\lib\gcc\arm-eabi\7.2.0\include-fixed
-//$(TOOLCHAIN_ROOT)\arm-eabi\sys-include
-//$(TOOLCHAIN_ROOT)\arm-eabi\include
 //$(BSP_ROOT)/STM32F4xxxx/STM32F4xx_HAL_Driver/Inc
 //$(BSP_ROOT)/STM32F4xxxx/STM32F4xx_HAL_Driver/Inc/Legacy
 //$(BSP_ROOT)/STM32F4xxxx/CMSIS_HAL/Device/ST/STM32F4xx/Include
@@ -1390,6 +1383,13 @@
 //$(BSP_ROOT)/FreeRTOS/Source/CMSIS_RTOS
 //$(BSP_ROOT)/FreeRTOS/Source/Include
 //$(BSP_ROOT)/FreeRTOS/Source/Portable/gcc/ARM_CM3
+//$(TOOLCHAIN_ROOT)\arm-eabi\include\c++\7.2.0
+//$(TOOLCHAIN_ROOT)\arm-eabi\include\c++\7.2.0\arm-eabi\thumb\cortex_m4
+//$(TOOLCHAIN_ROOT)\arm-eabi\include\c++\7.2.0\backward
+//$(TOOLCHAIN_ROOT)\lib\gcc\arm-eabi\7.2.0\include
+//$(TOOLCHAIN_ROOT)\lib\gcc\arm-eabi\7.2.0\include-fixed
+//$(TOOLCHAIN_ROOT)\arm-eabi\sys-include
+//$(TOOLCHAIN_ROOT)\arm-eabi\include
 // --- Include directories end --- //
 
 

@@ -753,5 +753,13 @@
     <None Include="stm32.xml">
       <Filter>VisualGDB settings</Filter>
     </None>
+    <ClCompile Include="SdFile.c">
+      <Filter>SdFile</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Sdfile.h">
+      <Filter>SdFile</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
