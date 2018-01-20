@@ -33,12 +33,12 @@
 /* Private define ------------------------------------------------------------*/
 /* Private macro -------------------------------------------------------------*/
 /* Private variables ---------------------------------------------------------*/
-osThreadId LEDThread1Handle, LEDThread2Handle;
+osThreadId LEDThread1Handle, LEDThread2Handle, ButtonScanThreadHandle;
 
 /* Private function prototypes -----------------------------------------------*/
 static void LED_Thread1(void const *argument);
 static void LED_Thread2(void const *argument);
-
+static void ButtonScan_Thread1(void const *argument);
 /* Private functions ---------------------------------------------------------*/
 
 /**
@@ -58,26 +58,41 @@ int main(void)
 	HAL_Init();  
 	
 	__GPIOD_CLK_ENABLE();
+	__GPIOA_CLK_ENABLE();
 	GPIO_InitTypeDef GPIO_InitStructure;
 
-	GPIO_InitStructure.Pin = GPIO_PIN_12 | GPIO_PIN_13;
+	GPIO_InitStructure.Pin = GPIO_PIN_12 | GPIO_PIN_13 | GPIO_PIN_14;
 
 	GPIO_InitStructure.Mode = GPIO_MODE_OUTPUT_PP;
 	GPIO_InitStructure.Speed = GPIO_SPEED_HIGH;
 	GPIO_InitStructure.Pull = GPIO_NOPULL;
 	HAL_GPIO_Init(GPIOD, &GPIO_InitStructure);
 
+	
+	GPIO_InitStructure.Pin = GPIO_PIN_0;
+	GPIO_InitStructure.Mode = GPIO_MODE_INPUT;
+	GPIO_InitStructure.Speed = GPIO_SPEED_HIGH;
+	GPIO_InitStructure.Pull = GPIO_PULLDOWN;
+	HAL_GPIO_Init(GPIOA, &GPIO_InitStructure);
+	
+	
 	/* Thread 1 definition */
 	osThreadDef(LED1, LED_Thread1, osPriorityNormal, 0, configMINIMAL_STACK_SIZE);
   
 	 /*  Thread 2 definition */
 	osThreadDef(LED2, LED_Thread2, osPriorityNormal, 0, configMINIMAL_STACK_SIZE);
+	
+	/*  Thread 3 definition */
+	osThreadDef(ButtonScan, ButtonScan_Thread1, osPriorityNormal, 0, configMINIMAL_STACK_SIZE);
   
 	/* Start thread 1 */
 	LEDThread1Handle = osThreadCreate(osThread(LED1), NULL);
   
 	/* Start thread 2 */
 	LEDThread2Handle = osThreadCreate(osThread(LED2), NULL);
+	
+	/* Start thread 3 */
+	ButtonScanThreadHandle = osThreadCreate(osThread(ButtonScan), NULL);
   
 	/* Start scheduler */
 	osKernelStart();
@@ -131,7 +146,28 @@ static void LED_Thread2(void const *argument)
 		osDelay(200);
 	}
 }
-
+/**
+  * @brief  ButtonScan_Thread1 thread
+  * @param  argument not used
+  * @retval None
+  */
+static void ButtonScan_Thread1(void const *argument)
+{
+	uint32_t count;
+	(void) argument;
+  
+	for (;;)
+	{
+		if (HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_0) == 1) //°´¼ü°´ÏÂ;
+		{
+			HAL_GPIO_WritePin(GPIOD, GPIO_PIN_14, GPIO_PIN_SET);
+		}
+		else
+		{
+			HAL_GPIO_WritePin(GPIOD, GPIO_PIN_14, GPIO_PIN_RESET);
+		}
+	}
+}
 #ifdef  USE_FULL_ASSERT
 /**
   * @brief  Reports the name of the source file and the source line number
