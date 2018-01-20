@@ -40,6 +40,12 @@
     <Filter Include="led">
       <UniqueIdentifier>{d5d58492-7363-4203-9f89-5d4344202c8f}</UniqueIdentifier>
     </Filter>
+    <Filter Include="IIC">
+      <UniqueIdentifier>{328a18f2-d8c7-4f4c-8de1-474599146453}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MPU6050">
+      <UniqueIdentifier>{76e7d77f-d5f2-4392-9f40-03c2867422c1}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="Makefile" />
@@ -756,10 +762,16 @@
     <ClCompile Include="led.c">
       <Filter>led</Filter>
     </ClCompile>
+    <ClCompile Include="MPU6050.c">
+      <Filter>MPU6050</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="led.h">
       <Filter>led</Filter>
+    </ClInclude>
+    <ClInclude Include="MPU6050.h">
+      <Filter>MPU6050</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
