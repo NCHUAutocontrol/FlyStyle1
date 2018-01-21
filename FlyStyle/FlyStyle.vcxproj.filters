@@ -40,11 +40,20 @@
     <Filter Include="led">
       <UniqueIdentifier>{d5d58492-7363-4203-9f89-5d4344202c8f}</UniqueIdentifier>
     </Filter>
-    <Filter Include="IIC">
-      <UniqueIdentifier>{328a18f2-d8c7-4f4c-8de1-474599146453}</UniqueIdentifier>
-    </Filter>
     <Filter Include="MPU6050">
       <UniqueIdentifier>{76e7d77f-d5f2-4392-9f40-03c2867422c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SYS">
+      <UniqueIdentifier>{bbce9968-bd02-44d3-86f1-e042c60af6f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Delay">
+      <UniqueIdentifier>{18464990-5bfc-452d-9559-1b46702de8f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="IIC">
+      <UniqueIdentifier>{e57ff885-e84d-4048-9d10-b76e1cdd9fb6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HMC5883L">
+      <UniqueIdentifier>{25a76450-dc2d-4042-8f16-3a47d16eb8d0}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -765,6 +774,18 @@
     <ClCompile Include="MPU6050.c">
       <Filter>MPU6050</Filter>
     </ClCompile>
+    <ClCompile Include="SYS.c">
+      <Filter>SYS</Filter>
+    </ClCompile>
+    <ClCompile Include="delay.c">
+      <Filter>Delay</Filter>
+    </ClCompile>
+    <ClCompile Include="IIC.c">
+      <Filter>IIC</Filter>
+    </ClCompile>
+    <ClCompile Include="HMC5883L.c">
+      <Filter>HMC5883L</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="led.h">
@@ -773,5 +794,25 @@
     <ClInclude Include="MPU6050.h">
       <Filter>MPU6050</Filter>
     </ClInclude>
+    <ClInclude Include="SYS.h">
+      <Filter>SYS</Filter>
+    </ClInclude>
+    <ClInclude Include="delay.h">
+      <Filter>Delay</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="IIC.h">
+      <Filter>IIC</Filter>
+    </ClInclude>
+    <ClInclude Include="HMC5883L.h">
+      <Filter>HMC5883L</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="FlyStyle.rc">
+      <Filter>Resource files</Filter>
+    </ResourceCompile>
   </ItemGroup>
 </Project>

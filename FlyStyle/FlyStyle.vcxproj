@@ -73,16 +73,26 @@
   <ItemDefinitionGroup>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ResourceCompile Include="FlyStyle.rc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
   <ItemGroup />
   <ItemGroup>
+    <ClCompile Include="delay.c" />
     <ClCompile Include="FlyStyle.c" />
+    <ClCompile Include="HMC5883L.c" />
+    <ClCompile Include="IIC.c" />
     <ClCompile Include="led.c" />
     <ClCompile Include="MPU6050.c" />
     <ClCompile Include="system_stm32f4xx.c" />
+    <ClCompile Include="SYS.c" />
+    <ClInclude Include="delay.h" />
+    <ClInclude Include="HMC5883L.h" />
+    <ClInclude Include="IIC.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="SYS.h" />
     <None Include="stm32.mak" />
     <ClCompile Include="$(BSP_ROOT)\STM32F4xxxx\StartupFiles\startup_stm32f407xx.c" />
     <None Include="$(BSP_ROOT)\FreeRTOS\License\license.txt" />
