@@ -1,4 +1,4 @@
-#include "imu.h"
+#include "IMU.h"
 #include "math.h"
 //#include "./usartp_usart.h"
 //#include "control.h"
