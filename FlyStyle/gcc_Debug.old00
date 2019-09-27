@@ -14,9 +14,6 @@
 #ifndef __HQ_FBIT__
 #define __HQ_FBIT__ 15
 #endif
-#ifndef __FLT32X_MAX_EXP__
-#define __FLT32X_MAX_EXP__ 1024
-#endif
 #ifndef __cpp_attributes
 #define __cpp_attributes 200809
 #endif
@@ -74,9 +71,6 @@
 #ifndef __WINT_MAX__
 #define __WINT_MAX__ 0xffffffffU
 #endif
-#ifndef __FLT32_MIN_EXP__
-#define __FLT32_MIN_EXP__ (-125)
-#endif
 #ifndef __cpp_static_assert
 #define __cpp_static_assert 200410
 #endif
@@ -113,9 +107,6 @@
 #ifndef __GCC_IEC_559
 #define __GCC_IEC_559 0
 #endif
-#ifndef __FLT32X_DECIMAL_DIG__
-#define __FLT32X_DECIMAL_DIG__ 17
-#endif
 #ifndef __FLT_EVAL_METHOD__
 #define __FLT_EVAL_METHOD__ 0
 #endif
@@ -124,9 +115,6 @@
 #endif
 #ifndef __LLACCUM_MAX__
 #define __LLACCUM_MAX__ 0X7FFFFFFFFFFFFFFFP-31LLK
-#endif
-#ifndef __FLT64_DECIMAL_DIG__
-#define __FLT64_DECIMAL_DIG__ 17
 #endif
 #ifndef __GCC_ATOMIC_CHAR32_T_LOCK_FREE
 #define __GCC_ATOMIC_CHAR32_T_LOCK_FREE 2
@@ -167,9 +155,6 @@
 #ifndef __GNUC_PATCHLEVEL__
 #define __GNUC_PATCHLEVEL__ 0
 #endif
-#ifndef __FLT32_HAS_DENORM__
-#define __FLT32_HAS_DENORM__ 1
-#endif
 #ifndef __LFRACT_MAX__
 #define __LFRACT_MAX__ 0X7FFFFFFFP-31LR
 #endif
@@ -178,9 +163,6 @@
 #endif
 #ifndef __DEC64_MAX_EXP__
 #define __DEC64_MAX_EXP__ 385
-#endif
-#ifndef __INT_LEAST8_WIDTH__
-#define __INT_LEAST8_WIDTH__ 8
 #endif
 #ifndef __UINT_LEAST64_MAX__
 #define __UINT_LEAST64_MAX__ 0xffffffffffffffffULL
@@ -224,9 +206,6 @@
 #ifndef __DEC32_EPSILON__
 #define __DEC32_EPSILON__ 1E-6DF
 #endif
-#ifndef __FLT_EVAL_METHOD_TS_18661_3__
-#define __FLT_EVAL_METHOD_TS_18661_3__ 0
-#endif
 #ifndef __CHAR_UNSIGNED__
 #define __CHAR_UNSIGNED__ 1
 #endif
@@ -253,9 +232,6 @@
 #endif
 #ifndef __ARM_ASM_SYNTAX_UNIFIED__
 #define __ARM_ASM_SYNTAX_UNIFIED__ 1
-#endif
-#ifndef __INT_LEAST16_WIDTH__
-#define __INT_LEAST16_WIDTH__ 16
 #endif
 #ifndef __ULLFRACT_MIN__
 #define __ULLFRACT_MIN__ 0.0ULLR
@@ -302,9 +278,6 @@
 #ifndef __HA_IBIT__
 #define __HA_IBIT__ 8
 #endif
-#ifndef __FLT32_DIG__
-#define __FLT32_DIG__ 6
-#endif
 #ifndef __TQ_IBIT__
 #define __TQ_IBIT__ 0
 #endif
@@ -316,9 +289,6 @@
 #endif
 #ifndef __GXX_WEAK__
 #define __GXX_WEAK__ 1
-#endif
-#ifndef __SHRT_WIDTH__
-#define __SHRT_WIDTH__ 16
 #endif
 #ifndef __USFRACT_IBIT__
 #define __USFRACT_IBIT__ 0
@@ -338,17 +308,11 @@
 #ifndef __ARM_SIZEOF_MINIMAL_ENUM
 #define __ARM_SIZEOF_MINIMAL_ENUM 1
 #endif
-#ifndef __FLT32X_HAS_INFINITY__
-#define __FLT32X_HAS_INFINITY__ 1
-#endif
 #ifndef __INT32_MAX__
 #define __INT32_MAX__ 0x7fffffffL
 #endif
 #ifndef __UQQ_FBIT__
 #define __UQQ_FBIT__ 8
-#endif
-#ifndef __INT_WIDTH__
-#define __INT_WIDTH__ 32
 #endif
 #ifndef __SIZEOF_LONG__
 #define __SIZEOF_LONG__ 4
@@ -356,26 +320,14 @@
 #ifndef __UACCUM_MAX__
 #define __UACCUM_MAX__ 0XFFFFFFFFP-16UK
 #endif
-#ifndef __PTRDIFF_WIDTH__
-#define __PTRDIFF_WIDTH__ 32
-#endif
 #ifndef __DECIMAL_DIG__
 #define __DECIMAL_DIG__ 17
 #endif
 #ifndef __LFRACT_EPSILON__
 #define __LFRACT_EPSILON__ 0x1P-31LR
 #endif
-#ifndef __FLT64_EPSILON__
-#define __FLT64_EPSILON__ 2.2204460492503131e-16F64
-#endif
 #ifndef __ULFRACT_MIN__
 #define __ULFRACT_MIN__ 0.0ULR
-#endif
-#ifndef __INTMAX_WIDTH__
-#define __INTMAX_WIDTH__ 64
-#endif
-#ifndef __FLT64_MIN_EXP__
-#define __FLT64_MIN_EXP__ (-1021)
 #endif
 #ifndef __LDBL_HAS_QUIET_NAN__
 #define __LDBL_HAS_QUIET_NAN__ 1
@@ -383,14 +335,11 @@
 #ifndef __ULACCUM_IBIT__
 #define __ULACCUM_IBIT__ 32
 #endif
-#ifndef __FLT64_MANT_DIG__
-#define __FLT64_MANT_DIG__ 53
-#endif
 #ifndef __UACCUM_EPSILON__
 #define __UACCUM_EPSILON__ 0x1P-16UK
 #endif
 #ifndef __GNUC__
-#define __GNUC__ 7
+#define __GNUC__ 6
 #endif
 #ifndef __ULLACCUM_MAX__
 #define __ULLACCUM_MAX__ 0XFFFFFFFFFFFFFFFFP-32ULLK
@@ -413,17 +362,14 @@
 #ifndef __STDC_UTF_16__
 #define __STDC_UTF_16__ 1
 #endif
-#ifndef __FLT64_MAX_10_EXP__
-#define __FLT64_MAX_10_EXP__ 308
-#endif
 #ifndef __GNUC_STDC_INLINE__
 #define __GNUC_STDC_INLINE__ 1
 #endif
 #ifndef __DQ_IBIT__
 #define __DQ_IBIT__ 0
 #endif
-#ifndef __FLT32_HAS_INFINITY__
-#define __FLT32_HAS_INFINITY__ 1
+#ifndef STM32F407xx
+#define STM32F407xx 1
 #endif
 #ifndef __DBL_MAX__
 #define __DBL_MAX__ double(1.7976931348623157e+308L)
@@ -452,14 +398,8 @@
 #ifndef __THUMB_INTERWORK__
 #define __THUMB_INTERWORK__ 1
 #endif
-#ifndef __INTPTR_WIDTH__
-#define __INTPTR_WIDTH__ 32
-#endif
 #ifndef __LACCUM_MAX__
 #define __LACCUM_MAX__ 0X7FFFFFFFFFFFFFFFP-31LK
-#endif
-#ifndef __FLT32X_HAS_DENORM__
-#define __FLT32X_HAS_DENORM__ 1
 #endif
 #ifndef __INT_FAST16_TYPE__
 #define __INT_FAST16_TYPE__ int
@@ -505,12 +445,6 @@
 #ifndef __USACCUM_EPSILON__
 #define __USACCUM_EPSILON__ 0x1P-8UHK
 #endif
-#ifndef __WCHAR_WIDTH__
-#define __WCHAR_WIDTH__ 32
-#endif
-#ifndef __FLT32_MAX__
-#define __FLT32_MAX__ 3.4028234663852886e+38F32
-#endif
 #ifndef __DEC128_EPSILON__
 #define __DEC128_EPSILON__ 1E-33DL
 #endif
@@ -526,14 +460,14 @@
 #ifndef __UACCUM_MIN__
 #define __UACCUM_MIN__ 0.0UK
 #endif
+#ifndef flash_layout
+#define flash_layout 1
+#endif
 #ifndef __UACCUM_IBIT__
 #define __UACCUM_IBIT__ 16
 #endif
-#ifndef __FLT32_HAS_QUIET_NAN__
-#define __FLT32_HAS_QUIET_NAN__ 1
-#endif
 #ifndef __GNUG__
-#define __GNUG__ 7
+#define __GNUG__ 6
 #endif
 #ifndef __LONG_LONG_MAX__
 #define __LONG_LONG_MAX__ 0x7fffffffffffffffLL
@@ -553,14 +487,8 @@
 #ifndef __SIZEOF_WINT_T__
 #define __SIZEOF_WINT_T__ 4
 #endif
-#ifndef __LONG_LONG_WIDTH__
-#define __LONG_LONG_WIDTH__ 64
-#endif
 #ifndef __cpp_initializer_lists
 #define __cpp_initializer_lists 200806
-#endif
-#ifndef __FLT32_MAX_EXP__
-#define __FLT32_MAX_EXP__ 128
 #endif
 #ifndef __SA_IBIT__
 #define __SA_IBIT__ 16
@@ -575,7 +503,7 @@
 #define __GCC_HAVE_DWARF2_CFI_ASM 1
 #endif
 #ifndef __GXX_ABI_VERSION
-#define __GXX_ABI_VERSION 1011
+#define __GXX_ABI_VERSION 1010
 #endif
 #ifndef __UTA_FBIT__
 #define __UTA_FBIT__ 64
@@ -601,14 +529,11 @@
 #ifndef __INT_FAST64_TYPE__
 #define __INT_FAST64_TYPE__ long long int
 #endif
-#ifndef __FLT64_DENORM_MIN__
-#define __FLT64_DENORM_MIN__ 4.9406564584124654e-324F64
-#endif
 #ifndef __DBL_MIN__
 #define __DBL_MIN__ double(2.2250738585072014e-308L)
 #endif
-#ifndef __FLT32X_EPSILON__
-#define __FLT32X_EPSILON__ 2.2204460492503131e-16F32x
+#ifndef __FLT_MIN_10_EXP__
+#define __FLT_MIN_10_EXP__ (-37)
 #endif
 #ifndef __LACCUM_MIN__
 #define __LACCUM_MIN__ (-0X1P31LK-0X1P31LK)
@@ -618,9 +543,6 @@
 #endif
 #ifndef __GXX_TYPEINFO_EQUALITY_INLINE
 #define __GXX_TYPEINFO_EQUALITY_INLINE 0
-#endif
-#ifndef __FLT64_MIN_10_EXP__
-#define __FLT64_MIN_10_EXP__ (-307)
 #endif
 #ifndef __ULLFRACT_EPSILON__
 #define __ULLFRACT_EPSILON__ 0x1P-64ULLR
@@ -646,9 +568,6 @@
 #ifndef __SQ_IBIT__
 #define __SQ_IBIT__ 0
 #endif
-#ifndef __FLT32_MIN__
-#define __FLT32_MIN__ 1.1754943508222875e-38F32
-#endif
 #ifndef __UINT8_TYPE__
 #define __UINT8_TYPE__ unsigned char
 #endif
@@ -667,11 +586,8 @@
 #ifndef __FLT_MANT_DIG__
 #define __FLT_MANT_DIG__ 24
 #endif
-#ifndef __LDBL_DECIMAL_DIG__
-#define __LDBL_DECIMAL_DIG__ 17
-#endif
 #ifndef __VERSION__
-#define __VERSION__ "7.2.0"
+#define __VERSION__ "6.2.0"
 #endif
 #ifndef __ULLFRACT_FBIT__
 #define __ULLFRACT_FBIT__ 64
@@ -700,8 +616,8 @@
 #ifndef __GCC_ATOMIC_INT_LOCK_FREE
 #define __GCC_ATOMIC_INT_LOCK_FREE 2
 #endif
-#ifndef __FLT32_MANT_DIG__
-#define __FLT32_MANT_DIG__ 24
+#ifndef USE_FREERTOS
+#define USE_FREERTOS 1
 #endif
 #ifndef __FLOAT_WORD_ORDER__
 #define __FLOAT_WORD_ORDER__ __ORDER_LITTLE_ENDIAN__
@@ -714,9 +630,6 @@
 #endif
 #ifndef __UQQ_IBIT__
 #define __UQQ_IBIT__ 0
-#endif
-#ifndef __SCHAR_WIDTH__
-#define __SCHAR_WIDTH__ 8
 #endif
 #ifndef __DEC64_EPSILON__
 #define __DEC64_EPSILON__ 1E-15DD
@@ -732,9 +645,6 @@
 #endif
 #ifndef __LLACCUM_FBIT__
 #define __LLACCUM_FBIT__ 31
-#endif
-#ifndef __FLT32_MAX_10_EXP__
-#define __FLT32_MAX_10_EXP__ 38
 #endif
 #ifndef __INT_FAST32_TYPE__
 #define __INT_FAST32_TYPE__ int
@@ -753,6 +663,9 @@
 #endif
 #ifndef __UDQ_FBIT__
 #define __UDQ_FBIT__ 64
+#endif
+#ifndef DEBUG
+#define DEBUG 1
 #endif
 #ifndef __INT8_TYPE__
 #define __INT8_TYPE__ signed char
@@ -802,23 +715,14 @@
 #ifndef __SIZEOF_PTRDIFF_T__
 #define __SIZEOF_PTRDIFF_T__ 4
 #endif
-#ifndef __FLT32X_MANT_DIG__
-#define __FLT32X_MANT_DIG__ 53
-#endif
 #ifndef __LACCUM_EPSILON__
 #define __LACCUM_EPSILON__ 0x1P-31LK
-#endif
-#ifndef __FLT32X_MIN_EXP__
-#define __FLT32X_MIN_EXP__ (-1021)
 #endif
 #ifndef __DEC32_SUBNORMAL_MIN__
 #define __DEC32_SUBNORMAL_MIN__ 0.000001E-95DF
 #endif
 #ifndef __INT_FAST16_MAX__
 #define __INT_FAST16_MAX__ 0x7fffffff
-#endif
-#ifndef __FLT64_DIG__
-#define __FLT64_DIG__ 15
 #endif
 #ifndef __UINT_FAST32_MAX__
 #define __UINT_FAST32_MAX__ 0xffffffffU
@@ -862,17 +766,11 @@
 #ifndef __ARM_32BIT_STATE
 #define __ARM_32BIT_STATE 1
 #endif
-#ifndef __INT_FAST32_WIDTH__
-#define __INT_FAST32_WIDTH__ 32
-#endif
 #ifndef __CHAR16_TYPE__
 #define __CHAR16_TYPE__ short unsigned int
 #endif
 #ifndef __PRAGMA_REDEFINE_EXTNAME
 #define __PRAGMA_REDEFINE_EXTNAME 1
-#endif
-#ifndef __SIZE_WIDTH__
-#define __SIZE_WIDTH__ 32
 #endif
 #ifndef __INT_LEAST16_MAX__
 #define __INT_LEAST16_MAX__ 0x7fff
@@ -886,14 +784,8 @@
 #ifndef __SACCUM_FBIT__
 #define __SACCUM_FBIT__ 7
 #endif
-#ifndef __FLT32_DENORM_MIN__
-#define __FLT32_DENORM_MIN__ 1.4012984643248171e-45F32
-#endif
 #ifndef __GCC_ATOMIC_LONG_LOCK_FREE
 #define __GCC_ATOMIC_LONG_LOCK_FREE 2
-#endif
-#ifndef __SIG_ATOMIC_WIDTH__
-#define __SIG_ATOMIC_WIDTH__ 32
 #endif
 #ifndef __INT_LEAST64_TYPE__
 #define __INT_LEAST64_TYPE__ long long int
@@ -934,12 +826,6 @@
 #ifndef __UTA_IBIT__
 #define __UTA_IBIT__ 64
 #endif
-#ifndef __FLT64_HAS_QUIET_NAN__
-#define __FLT64_HAS_QUIET_NAN__ 1
-#endif
-#ifndef __FLT32_MIN_10_EXP__
-#define __FLT32_MIN_10_EXP__ (-37)
-#endif
 #ifndef __LDBL_MANT_DIG__
 #define __LDBL_MANT_DIG__ 53
 #endif
@@ -951,9 +837,6 @@
 #endif
 #ifndef __DBL_HAS_QUIET_NAN__
 #define __DBL_HAS_QUIET_NAN__ 1
-#endif
-#ifndef __FLT64_HAS_INFINITY__
-#define __FLT64_HAS_INFINITY__ 1
 #endif
 #ifndef __SIG_ATOMIC_MIN__
 #define __SIG_ATOMIC_MIN__ (-__SIG_ATOMIC_MAX__ - 1)
@@ -982,17 +865,11 @@
 #ifndef __UINTPTR_MAX__
 #define __UINTPTR_MAX__ 0xffffffffU
 #endif
-#ifndef __INT_FAST64_WIDTH__
-#define __INT_FAST64_WIDTH__ 64
-#endif
 #ifndef __DEC64_MIN_EXP__
 #define __DEC64_MIN_EXP__ (-382)
 #endif
 #ifndef __cpp_decltype
 #define __cpp_decltype 200707
-#endif
-#ifndef __FLT32_DECIMAL_DIG__
-#define __FLT32_DECIMAL_DIG__ 9
 #endif
 #ifndef __INT_FAST64_MAX__
 #define __INT_FAST64_MAX__ 0x7fffffffffffffffLL
@@ -1034,7 +911,7 @@
 #define __DBL_MANT_DIG__ 53
 #endif
 #ifndef __cpp_inheriting_constructors
-#define __cpp_inheriting_constructors 201511
+#define __cpp_inheriting_constructors 200802
 #endif
 #ifndef __INT_LEAST64_MAX__
 #define __INT_LEAST64_MAX__ 0x7fffffffffffffffLL
@@ -1060,20 +937,11 @@
 #ifndef __arm__
 #define __arm__ 1
 #endif
-#ifndef __FLT64_MAX__
-#define __FLT64_MAX__ 1.7976931348623157e+308F64
-#endif
 #ifndef __UDA_IBIT__
 #define __UDA_IBIT__ 32
 #endif
-#ifndef __WINT_WIDTH__
-#define __WINT_WIDTH__ 32
-#endif
 #ifndef __INT_LEAST8_MAX__
 #define __INT_LEAST8_MAX__ 0x7f
-#endif
-#ifndef __FLT32X_MAX_10_EXP__
-#define __FLT32X_MAX_10_EXP__ 308
 #endif
 #ifndef __LFRACT_FBIT__
 #define __LFRACT_FBIT__ 31
@@ -1096,14 +964,14 @@
 #ifndef __ARM_FEATURE_SIMD32
 #define __ARM_FEATURE_SIMD32 1
 #endif
-#ifndef __FLT64_MAX_EXP__
-#define __FLT64_MAX_EXP__ 1024
-#endif
 #ifndef __INT_LEAST32_TYPE__
 #define __INT_LEAST32_TYPE__ long int
 #endif
 #ifndef __SIZEOF_WCHAR_T__
 #define __SIZEOF_WCHAR_T__ 4
+#endif
+#ifndef __UINT64_TYPE__
+#define __UINT64_TYPE__ long long unsigned int
 #endif
 #ifndef __LLFRACT_MAX__
 #define __LLFRACT_MAX__ 0X7FFFFFFFFFFFFFFFP-63LLR
@@ -1123,26 +991,14 @@
 #ifndef __LLACCUM_IBIT__
 #define __LLACCUM_IBIT__ 32
 #endif
-#ifndef __FLT64_HAS_DENORM__
-#define __FLT64_HAS_DENORM__ 1
-#endif
-#ifndef __FLT32_EPSILON__
-#define __FLT32_EPSILON__ 1.1920928955078125e-7F32
-#endif
 #ifndef __DBL_DECIMAL_DIG__
 #define __DBL_DECIMAL_DIG__ 17
 #endif
 #ifndef __STDC_UTF_32__
 #define __STDC_UTF_32__ 1
 #endif
-#ifndef __INT_FAST8_WIDTH__
-#define __INT_FAST8_WIDTH__ 32
-#endif
 #ifndef __DEC_EVAL_METHOD__
 #define __DEC_EVAL_METHOD__ 2
-#endif
-#ifndef __FLT32X_MAX__
-#define __FLT32X_MAX__ 1.7976931348623157e+308F32x
 #endif
 #ifndef __TA_FBIT__
 #define __TA_FBIT__ 63
@@ -1155,9 +1011,6 @@
 #endif
 #ifndef __cpp_runtime_arrays
 #define __cpp_runtime_arrays 198712
-#endif
-#ifndef __UINT64_TYPE__
-#define __UINT64_TYPE__ long long unsigned int
 #endif
 #ifndef __ACCUM_EPSILON__
 #define __ACCUM_EPSILON__ 0x1P-15K
@@ -1180,9 +1033,6 @@
 #ifndef __INT8_MAX__
 #define __INT8_MAX__ 0x7f
 #endif
-#ifndef __LONG_WIDTH__
-#define __LONG_WIDTH__ 32
-#endif
 #ifndef __UINT_FAST32_TYPE__
 #define __UINT_FAST32_TYPE__ unsigned int
 #endif
@@ -1204,17 +1054,8 @@
 #ifndef __SIZEOF_DOUBLE__
 #define __SIZEOF_DOUBLE__ 8
 #endif
-#ifndef __FLT_MIN_10_EXP__
-#define __FLT_MIN_10_EXP__ (-37)
-#endif
 #ifndef __UFRACT_EPSILON__
 #define __UFRACT_EPSILON__ 0x1P-16UR
-#endif
-#ifndef __FLT64_MIN__
-#define __FLT64_MIN__ 2.2250738585072014e-308F64
-#endif
-#ifndef __INT_LEAST32_WIDTH__
-#define __INT_LEAST32_WIDTH__ 32
 #endif
 #ifndef __INTMAX_TYPE__
 #define __INTMAX_TYPE__ long long int
@@ -1222,26 +1063,17 @@
 #ifndef __DEC128_MAX_EXP__
 #define __DEC128_MAX_EXP__ 6145
 #endif
-#ifndef __FLT32X_HAS_QUIET_NAN__
-#define __FLT32X_HAS_QUIET_NAN__ 1
-#endif
 #ifndef __ATOMIC_CONSUME
 #define __ATOMIC_CONSUME 1
 #endif
 #ifndef __GNUC_MINOR__
 #define __GNUC_MINOR__ 2
 #endif
-#ifndef __INT_FAST16_WIDTH__
-#define __INT_FAST16_WIDTH__ 32
-#endif
 #ifndef __UINTMAX_MAX__
 #define __UINTMAX_MAX__ 0xffffffffffffffffULL
 #endif
 #ifndef __DEC32_MANT_DIG__
 #define __DEC32_MANT_DIG__ 7
-#endif
-#ifndef __FLT32X_DENORM_MIN__
-#define __FLT32X_DENORM_MIN__ 4.9406564584124654e-324F32x
 #endif
 #ifndef __HA_FBIT__
 #define __HA_FBIT__ 7
@@ -1258,9 +1090,6 @@
 #ifndef __STDC__
 #define __STDC__ 1
 #endif
-#ifndef __FLT32X_DIG__
-#define __FLT32X_DIG__ 15
-#endif
 #ifndef __PTRDIFF_TYPE__
 #define __PTRDIFF_TYPE__ int
 #endif
@@ -1275,9 +1104,6 @@
 #endif
 #ifndef __UINT32_TYPE__
 #define __UINT32_TYPE__ long unsigned int
-#endif
-#ifndef __FLT32X_MIN_10_EXP__
-#define __FLT32X_MIN_10_EXP__ (-307)
 #endif
 #ifndef __ARM_ARCH_EXT_IDIV__
 #define __ARM_ARCH_EXT_IDIV__ 1
@@ -1315,9 +1141,6 @@
 #ifndef __GCC_ATOMIC_LLONG_LOCK_FREE
 #define __GCC_ATOMIC_LLONG_LOCK_FREE 1
 #endif
-#ifndef __FLT32X_MIN__
-#define __FLT32X_MIN__ 2.2250738585072014e-308F32x
-#endif
 #ifndef __LDBL_DIG__
 #define __LDBL_DIG__ 15
 #endif
@@ -1329,9 +1152,6 @@
 #endif
 #ifndef __GCC_ATOMIC_SHORT_LOCK_FREE
 #define __GCC_ATOMIC_SHORT_LOCK_FREE 2
-#endif
-#ifndef __INT_LEAST64_WIDTH__
-#define __INT_LEAST64_WIDTH__ 64
 #endif
 #ifndef __ULLFRACT_MAX__
 #define __ULLFRACT_MAX__ 0XFFFFFFFFFFFFFFFFP-64ULLR
@@ -1360,43 +1180,31 @@
 #ifndef __ATOMIC_RELEASE
 #define __ATOMIC_RELEASE 3
 #endif
-#ifndef DEBUG
-#define DEBUG 1
-#endif
-#ifndef flash_layout
-#define flash_layout 
-#endif
-#ifndef STM32F407xx
-#define STM32F407xx 
-#endif
-#ifndef USE_FREERTOS
-#define USE_FREERTOS 
-#endif
 #endif
 
 // --- Include directories begin --- //
 //.
-//$(TOOLCHAIN_ROOT)\arm-eabi\include\c++\7.2.0
-//$(TOOLCHAIN_ROOT)\arm-eabi\include\c++\7.2.0\arm-eabi\thumb\cortex_m4
-//$(TOOLCHAIN_ROOT)\arm-eabi\include\c++\7.2.0\backward
-//$(TOOLCHAIN_ROOT)\lib\gcc\arm-eabi\7.2.0\include
-//$(TOOLCHAIN_ROOT)\lib\gcc\arm-eabi\7.2.0\include-fixed
-//$(TOOLCHAIN_ROOT)\arm-eabi\sys-include
-//$(TOOLCHAIN_ROOT)\arm-eabi\include
 //$(BSP_ROOT)/STM32F4xxxx/STM32F4xx_HAL_Driver/Inc
 //$(BSP_ROOT)/STM32F4xxxx/STM32F4xx_HAL_Driver/Inc/Legacy
 //$(BSP_ROOT)/STM32F4xxxx/CMSIS_HAL/Device/ST/STM32F4xx/Include
 //$(BSP_ROOT)/STM32F4xxxx/CMSIS_HAL/Include
 //$(BSP_ROOT)/FreeRTOS/Source/CMSIS_RTOS
-//$(BSP_ROOT)/FreeRTOS/Source/Include
+//$(BSP_ROOT)/FreeRTOS/Source/include
 //$(BSP_ROOT)/FreeRTOS/Source/Portable/gcc/ARM_CM3
+//$(TOOLCHAIN_ROOT)\arm-eabi\include\c++\6.2.0
+//$(TOOLCHAIN_ROOT)\arm-eabi\include\c++\6.2.0\arm-eabi\thumb\cortex_m4
+//$(TOOLCHAIN_ROOT)\arm-eabi\include\c++\6.2.0\backward
+//$(TOOLCHAIN_ROOT)\lib\gcc\arm-eabi\6.2.0\include
+//$(TOOLCHAIN_ROOT)\lib\gcc\arm-eabi\6.2.0\include-fixed
+//$(TOOLCHAIN_ROOT)\arm-eabi\sys-include
+//$(TOOLCHAIN_ROOT)\arm-eabi\include
 // --- Include directories end --- //
 
 
 // --- Library directories begin --- //
-//$(TOOLCHAIN_ROOT)\lib\gcc\arm-eabi\7.2.0\thumb\cortex_m4\
+//$(TOOLCHAIN_ROOT)\lib\gcc\arm-eabi\6.2.0\thumb\cortex_m4\
 //$(TOOLCHAIN_ROOT)\arm-eabi\lib\thumb\cortex_m4\
-//$(TOOLCHAIN_ROOT)\lib\gcc\arm-eabi\7.2.0\
+//$(TOOLCHAIN_ROOT)\lib\gcc\arm-eabi\6.2.0\
 //$(TOOLCHAIN_ROOT)\lib\gcc\
 //$(TOOLCHAIN_ROOT)\arm-eabi\lib\
 // --- Library directories begin --- //

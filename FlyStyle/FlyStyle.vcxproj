@@ -84,6 +84,7 @@
     <ClCompile Include="FlyStyle.c" />
     <ClCompile Include="HMC5883L.c" />
     <ClCompile Include="IIC.c" />
+    <ClCompile Include="IMU.c" />
     <ClCompile Include="led.c" />
     <ClCompile Include="MPU6050.c" />
     <ClCompile Include="system_stm32f4xx.c" />
@@ -91,6 +92,7 @@
     <ClInclude Include="delay.h" />
     <ClInclude Include="HMC5883L.h" />
     <ClInclude Include="IIC.h" />
+    <ClInclude Include="IMU.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="SYS.h" />
     <None Include="stm32.mak" />

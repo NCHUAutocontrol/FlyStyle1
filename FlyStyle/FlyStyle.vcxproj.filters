@@ -55,6 +55,9 @@
     <Filter Include="HMC5883L">
       <UniqueIdentifier>{25a76450-dc2d-4042-8f16-3a47d16eb8d0}</UniqueIdentifier>
     </Filter>
+    <Filter Include="IMU">
+      <UniqueIdentifier>{2ae3102d-1e08-4219-9d2d-0339495f2433}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="Makefile" />
@@ -786,6 +789,9 @@
     <ClCompile Include="HMC5883L.c">
       <Filter>HMC5883L</Filter>
     </ClCompile>
+    <ClCompile Include="IMU.c">
+      <Filter>IMU</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="led.h">
@@ -808,6 +814,9 @@
     </ClInclude>
     <ClInclude Include="HMC5883L.h">
       <Filter>HMC5883L</Filter>
+    </ClInclude>
+    <ClInclude Include="IMU.h">
+      <Filter>IMU</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

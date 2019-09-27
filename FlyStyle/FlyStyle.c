@@ -72,7 +72,7 @@ int main(void)
   
 	 /*  Thread 2 definition */
 	osThreadDef(LED2, LED_Thread2, osPriorityNormal, 0, configMINIMAL_STACK_SIZE);
-  
+
 	/* Start thread 1 */
 	LEDThread1Handle = osThreadCreate(osThread(LED1), NULL);
   
@@ -101,7 +101,7 @@ void SysTick_Handler(void)
 static void LED_Thread1(void const *argument)
 {
 	(void) argument;
-  
+  /
 	for (;;)
 	{
 		HAL_GPIO_WritePin(GPIOD, GPIO_PIN_12, GPIO_PIN_SET);
